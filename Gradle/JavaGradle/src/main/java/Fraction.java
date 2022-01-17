@@ -37,16 +37,17 @@ public class Fraction {
       return numerator;
    }
 
+   //public static void main (String args[], int Pdenom, int Pnum) {
    public static void main (String args[]) {
 
       if (args.length == 2){
 
-         int argNum = 0;
-         int argDenom = 0;
+         int num = 0;
+         int denom = 0;
 
          try {
-            argNum = Integer.parseInt(args[0]);
-            argDenom = Integer.parseInt(args[1]); 
+            num = Integer.parseInt(args[0]);
+            denom = Integer.parseInt(args[1]); 
 
             // create a new instance
             // Fraction *frac = [[Fraction alloc] init];
@@ -55,8 +56,8 @@ public class Fraction {
             // set the values
             // frac.setNumerator(1);
             // frac.setDenominator(3);
-            frac.setNumerator(argNum);
-            frac.setDenominator(argDenom);
+            frac.setNumerator(num);
+            frac.setDenominator(denom);
 
             // print it
             System.out.print("The fraction is: ");
@@ -67,7 +68,7 @@ public class Fraction {
             e.printStackTrace();
          }
       }  else {
-            System.out.println("Exactly two arguments should be provided. \n gradle run --args='1 2'");
+            System.out.println("Exactly two arguments should be provided. \n "); 
       }    
    }
 }
